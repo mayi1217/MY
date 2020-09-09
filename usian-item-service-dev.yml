@@ -3,12 +3,12 @@ spring:
     name: usian-item-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.18.140:8066/usian?characterEncoding=UTF-8
+    url: jdbc:mysql://192.168.248.140:8066/usian?characterEncoding=UTF-8
     username: root
-    password: 1111
+    password: 1212
     type: com.alibaba.druid.pool.DruidDataSource
   rabbitmq:
-    host: 192.168.18.137
+    host: 192.168.248.136
     username: admin
     password: 1111
     virtual-host: /
@@ -17,12 +17,12 @@ spring:
   redis:
     cluster:
       nodes:
-        - 192.168.18.133:7001
-        - 192.168.18.133:7002
-        - 192.168.18.133:7003
-        - 192.168.18.133:7004
-        - 192.168.18.133:7005
-        - 192.168.18.133:7006
+        - 192.168.248.133:7001
+        - 192.168.248.133:7002
+        - 192.168.248.133:7003
+        - 192.168.248.133:7004
+        - 192.168.248.133:7005
+        - 192.168.248.133:7006
     jedis:
       pool:
         max-active: 20 #连接池最大连接数
